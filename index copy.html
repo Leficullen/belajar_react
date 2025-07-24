@@ -15,22 +15,18 @@
         const root = ReactDOM.createRoot(container);
         function Tes ({author}) {
             return (<>
-            <h1 onClick = {e => {alert('I Love You')}}>Hello {author ? author : 'Lefi'}</h1>
+            <h1 onClick = {e => {alert('I Love You')}}>Hello {author ? author : 'Leffff'}</h1>
             </>
             );
         }
         function HomePage () {
-            const students = ['Lefi', 'Newrule', 'Syamsul'];
             return (
                 <div>
                     <Tes/>
-                    <ul>
-                        {students.map((student) => (
-                            <li key = {student}> {student}</li>
-                        ))}
-                    </ul>
+                    <Tes author="Newrul"/>
+
                 </div>
-            );
+            )
         }
         root.render(<HomePage/>);
     </script> 
